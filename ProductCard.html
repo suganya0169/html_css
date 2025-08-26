@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f8ff;
+        }
+
+    .card {
+      width: 300px;
+      background: #f0fff4;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 10px 0;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .card .price {
+      font-size: 18px;
+      color: #888;
+    }
+
+    .card p {
+      padding: 0 15px;
+      font-size: 14px;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      background: #000000 ;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 0 0 10px 10px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background:#4444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/MAY/21/J4Gza4f7_201568c2e13b4b338fb45f395e70b12e.jpg" alt="Tailored Jeans">
+    <h2>Classic Blue Jeans</h2>
+    <p class="price">$24.99</p>
+    <p>Timeless slim-fit blue jeans designed for everyday comfort. Crafted with premium denim for durability and style, perfect for both casual and semi-formal looks.</p>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+
+</body>
+</html>
