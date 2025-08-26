@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+background: url("https://png.pngtree.com/thumb_back/fh260/background/20220929/pngtree-vector-illustration-of-a-seamless-physics-and-science-pattern-featuring-handdrawn-doodles-and-sketch-elements-as-the-background-photo-image_33992768.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .addBtn {
+      width: 100%;
+      background: #28a745;
+      color: white;
+      font-size: 16px;
+    }
+
+    .task {
+      background: #f9f9f9;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .task span {
+      flex: 1;
+    }
+
+    .editBtn {
+      background: #007bff;
+      color: white;
+      margin-right: 5px;
+    }
+
+    .deleteBtn {
+      background: #fd7e14;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>TO DO LIST</h2>
+    <input type="text" placeholder="Enter a new task">
+    <button class="addBtn">Add Task</button>
+
+    <div class="task">
+      <span>Team Call</span>
+      <button class="editBtn">Update</button>
+      <button class="deleteBtn">Remove</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
