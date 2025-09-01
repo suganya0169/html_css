@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Festive Falling Balls Background</title>
+  <style>
+    body,html {
+      width:100%;
+      height:100%;
+      margin:0;
+      padding:0;
+      background: radial-gradient(circle at top, #6a0dad, #3d0066); /* purple festive bg */
+      overflow:hidden;
+    }
+
+    .balls {
+      position:absolute;
+      width:100%;
+      height:100%;
+      z-index:0;
+      top:0;
+      left:0;
+      overflow:hidden;
+    }
+
+    .ball {
+      position:absolute;
+      bottom:-100px;
+      background: radial-gradient(circle, #ffffff, rgba(255,255,255,0.1));
+      border-radius:50%;
+      opacity:0.8;
+      animation: floatUp 10s infinite ease-in;
+      box-shadow: 0 0 15px rgba(255,255,255,0.8),
+                  0 0 30px rgba(255,255,255,0.5);
+    }
+
+    /* Different sizes + timings */
+    .ball:nth-child(1){ width:40px; height:40px; left:10%; animation-duration:8s; }
+    .ball:nth-child(2){ width:25px; height:25px; left:20%; animation-duration:6s; animation-delay:1s; }
+    .ball:nth-child(3){ width:60px; height:60px; left:35%; animation-duration:9s; animation-delay:2s; }
+    .ball:nth-child(4){ width:80px; height:80px; left:50%; animation-duration:12s; }
+    .ball:nth-child(5){ width:30px; height:30px; left:65%; animation-duration:7s; animation-delay:1s; }
+    .ball:nth-child(6){ width:45px; height:45px; left:75%; animation-duration:10s; animation-delay:3s; }
+    .ball:nth-child(7){ width:90px; height:90px; left:85%; animation-duration:14s; animation-delay:2s; }
+    .ball:nth-child(8){ width:20px; height:20px; left:15%; animation-duration:5s; animation-delay:2s; }
+    .ball:nth-child(9){ width:15px; height:15px; left:55%; animation-duration:6s; animation-delay:1s; }
+    .ball:nth-child(10){ width:70px; height:70px; left:40%; animation-duration:11s; animation-delay:4s; }
+
+    @keyframes floatUp {
+      0%   { bottom:-100px; transform: translateX(0); opacity:0; }
+      30%  { opacity:1; }
+      50%  { transform: translateX(50px); }
+      100% { bottom:110%; transform: translateX(-50px); opacity:0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="balls">
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+  </div>
+</body>
+</html>
